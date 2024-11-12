@@ -1,24 +1,34 @@
-# README
+# Footy App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Leveraging the [API-Football](https://www.api-football.com/) dataset to create something interesting.
 
-Things you may want to cover:
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-* Ruby version
+## Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/otherdcn/footy-app.git
+```
 
-* System dependencies
+2. Install dependencies:
+```bash
+bin/setup
+```
 
-* Configuration
+## Usage
+Use the following command to start the server:
+```bash
+bin/rails s
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Contributing
+If you feel the need to try it out and perhaps contribute:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Make your changes.
+4. Push your branch: `git push origin feature-name`.
+5. Create a pull request.
