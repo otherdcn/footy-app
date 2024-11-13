@@ -1,0 +1,20 @@
+<h1>Footballing Countries</h1>
+<p>Check one of the <%= @countries.size %> countries to view their leagues and club teams!</p>
+
+<div class="countries">
+  <% if @countries %>
+    <% @countries.each do |country| %>
+      <div class="country">
+        <p>
+          <%= country["name"] %> (<%= country["code"] %>) |
+          <%= image_tag(country["flag"],
+                        size: "25", 
+                        alt: "<#{country["name"]}> flag") if country["flag"] 
+                        %>
+        </p>
+      </div>
+    <% end %>
+  <% else %>
+    <p>No data available</p>
+  <% end %>
+</div>
