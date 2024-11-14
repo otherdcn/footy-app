@@ -1,0 +1,31 @@
+<h1><%= @country["name"] %> | <%= @country["code"] %></h1>
+
+<p>
+<%= image_tag(@country["flag"],
+              size: "50", 
+              alt: "<#{@country["name"]}> flag") if @country["flag"] 
+              %>
+</p>
+
+<hr />
+
+<p>Check out the Leagues and the clubs competing within:</p>
+
+<div class="leagues">
+  <% if @leagues %>
+    <% @leagues.each do |league| %>
+      <div class="league">
+        <p>
+          <%= league["league"]["name"] %> (<%= league["league"]["type"] %>)
+          <%= image_tag(league["league"]["logo"],
+                        size: "25", 
+                        alt: "<#{league["league"]["name"]}> flag") if league["league"]["logo"] 
+                        %>
+        </p>
+      </div>
+    <% end %>
+  <% else %>
+    <p>There are no leagues to display</p>
+  <% end %>
+</div>
+

@@ -3,7 +3,7 @@
 
 <div class="countries">
   <% if @countries %>
-    <% @countries.each do |country| %>
+    <% @countries.each_with_index do |country, idx| %>
       <div class="country">
         <p>
           <%= country["name"] %> (<%= country["code"] %>) |
@@ -11,6 +11,7 @@
                         size: "25", 
                         alt: "<#{country["name"]}> flag") if country["flag"] 
                         %>
+          <%= link_to "View Country", country_path(idx) %>
         </p>
       </div>
     <% end %>
