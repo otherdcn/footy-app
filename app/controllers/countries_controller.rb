@@ -7,6 +7,11 @@ class CountriesController < ApplicationController
     @countries
   end
 
+  def show
+    @country = @countries[params["id"].to_i]
+    @leagues = LeaguesHelper::LeagueData.new.leagues({code: @country["code"]})["response"]
+  end
+
   private
 
   def set_api_football
