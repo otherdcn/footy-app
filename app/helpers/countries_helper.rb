@@ -1,16 +1,11 @@
 module CountriesHelper
-  class APIFootball
-    include HTTParty
-    API_KEY = Rails.application.credentials.api_sports.football[:key]
-    base_uri  "https://v3.football.api-sports.io/"
-    headers   "x-apisports-key" => API_KEY
-
+  class CountryData < ApplicationHelper::APIFootball
+    ENDPOINT = "/countries".freeze
 
     def countries(options = {})
-      endpoint = "/countries"
       queries = { query: options }
 
-      self.class.get(endpoint, queries)
+      self.class.get(ENDPOINT, queries)
     end
   end
 end
