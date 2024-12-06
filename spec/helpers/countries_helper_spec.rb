@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe CountriesHelper, type: :helper do
+RSpec.describe Helpers::Countries, type: :helper do
   describe "#countries" do
 
     # lets add VCR
     # make the call to the api and store the response in a cassette
     # use the cassette to test the helper method
 
-    subject { CountriesHelper::CountryData.new }
+    subject { described_class.new }
     let(:country_code) { nil }
     let(:options) do
       country_code.nil? ? {} : { "code" => country_code.to_s }

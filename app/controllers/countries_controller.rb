@@ -15,7 +15,7 @@ class CountriesController < ApplicationController
   private
 
   def set_api_football
-    @api_football_country = CountriesHelper::CountryData.new
+    @api_football_country = Helpers::Countries.new
   end
 
   def set_countries

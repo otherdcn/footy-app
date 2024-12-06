@@ -1,7 +1,14 @@
 require 'rails_helper'
 
-RSpec.describe "Countrie API requests", type: :request do
+RSpec.describe "Countries API requests", type: :request do
   describe "#index" do
+
+    let(:countries_helper) { double(CountriesHelper::CountryData) }
+    before do
+      allow(CountriesHelper::CountryData).to receive(:new).and_return(countries_helper)
+      allow(countries_helper).to receive(:countries).and_return({ "response" => [{ "name" => "Namibia", "code" => "NA" }] })
+    end
+
     it "returns a list of all footballing countries" do
       get "/"
 
