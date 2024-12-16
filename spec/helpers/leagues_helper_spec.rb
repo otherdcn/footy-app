@@ -1,13 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe LeaguesHelper, type: :helper do
+RSpec.describe LeaguesHelper::LeagueData, type: :helper do
   describe "#countries" do
-    def get_leagues(country_code: nil)
-      leagues_data = LeaguesHelper::LeagueData.new
-      options = country_code.nil? ? {} : { "code" => country_code.to_s }
-
-      leagues_data.leagues(options)
-    end
 
     def same_country?(response_hash, country_code)
       country_code_list = []
@@ -19,28 +13,39 @@ RSpec.describe LeaguesHelper, type: :helper do
       country_code_list.all? { |element| element == country_code }
     end
 
-    context "when no arguments are given" do
+    subject { described_class.new }
+
+    let(:country_code) { nil }
+    let(:options) do
+      country_code.nil? ? {} : { "code" => country_code.to_s }
+    end
+
+    context "when country_code is nil" do
 
       it "returns all the leagues" do
-        leagues = get_leagues(country_code: nil)
+        VCR.use_cassette("api-football/leagues/all_leagues") do
+          leagues = subject.leagues(options)
 
-        number_of_responses = leagues["response"].size
+          number_of_responses = leagues["response"].size
 
-        expect(number_of_responses).to be > 2
+          expect(number_of_responses).to be > 2
+        end
       end
 
     end
 
-    context "when arguments are given" do
+    context "when country_code is not nil" do
+      let(:country_code) { "FR" }
 
       it "returns only the specified country's leagues requested" do
-        country_code = "FR"
-        leagues = get_leagues(country_code: country_code)
+        VCR.use_cassette("api-football/leagues/fr/leagues") do
+          leagues = subject.leagues(options)
 
-        number_of_responses = leagues["response"].size
-        name_of_country = leagues["response"][0]["name"]
+          number_of_responses = leagues["response"].size
+          name_of_country = leagues["response"][0]["name"]
 
-        expect(same_country?(leagues, country_code)).to be true
+          expect(same_country?(leagues, country_code)).to be true
+        end
       end
 
     end

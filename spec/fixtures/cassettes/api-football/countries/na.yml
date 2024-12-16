@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://v3.football.api-sports.io/countries?code=na
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apisports-Key:
+      - 5bc6e229ab74dcf66e91f717d5319dad
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 Dec 2024 16:19:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'True'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - x-rapidapi-key, x-apisports-key, x-rapidapi-host
+      X-Ratelimit-Limit:
+      - '10'
+      X-Ratelimit-Remaining:
+      - '9'
+      X-Ratelimit-Requests-Limit:
+      - '100'
+      X-Ratelimit-Requests-Remaining:
+      - '91'
+      X-Envoy-Upstream-Service-Time:
+      - '171'
+      X-Koyeb-Backend:
+      - par
+      X-Koyeb-Glb:
+      - sin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8f2fff5bdfed4fc5-JNB
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"get":"countries","parameters":{"code":"na"},"errors":[],"results":1,"paging":{"current":1,"total":1},"response":[{"name":"Namibia","code":"NA","flag":"https:\/\/media.api-sports.io\/flags\/na.svg"}]}'
+  recorded_at: Mon, 16 Dec 2024 16:19:52 GMT
+recorded_with: VCR 6.3.1

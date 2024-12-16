@@ -1,9 +1,9 @@
-module Helpers
-  class Countries < ApplicationHelper::APIFootball
+module CountriesHelper
+  class CountryData < ApplicationHelper::APIFootball
     ENDPOINT = "/countries".freeze
 
     def countries(options = {})
-      debugger
+      #debugger
       queries = { query: options }
 
       self.class.get(ENDPOINT, queries)
