@@ -1,6 +1,4 @@
 class CountriesController < ApplicationController
-  include CountriesHelper
-
   before_action :set_api_football, :set_countries
 
   def index
