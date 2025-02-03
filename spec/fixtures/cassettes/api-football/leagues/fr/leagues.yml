@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://v3.football.api-sports.io/leagues?code=FR&current=true&type=league
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apisports-Key:
+      - 5bc6e229ab74dcf66e91f717d5319dad
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 Dec 2024 16:26:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'True'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - x-rapidapi-key, x-apisports-key, x-rapidapi-host
+      X-Ratelimit-Limit:
+      - '10'
+      X-Ratelimit-Remaining:
+      - '8'
+      X-Ratelimit-Requests-Limit:
+      - '100'
+      X-Ratelimit-Requests-Remaining:
+      - '89'
+      X-Envoy-Upstream-Service-Time:
+      - '180'
+      X-Koyeb-Backend:
+      - par
+      X-Koyeb-Glb:
+      - sin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8f300862af4f9e8c-JNB
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"get":"leagues","parameters":{"type":"league","current":"true","code":"FR"},"errors":[],"results":21,"paging":{"current":1,"total":1},"response":[{"league":{"id":472,"name":"National
+        3 - Group M","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/472.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2022,"start":"2022-08-28","end":"2023-06-03","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":471,"name":"National
+        3 - Group L","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/471.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2022,"start":"2022-08-27","end":"2023-06-03","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":70,"name":"National
+        2 - Group D","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/70.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2023,"start":"2023-08-26","end":"2024-05-18","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":470,"name":"National
+        3 - Group K","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/470.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2023,"start":"2023-08-26","end":"2024-05-19","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":469,"name":"National
+        3 - Group J","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/469.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":465,"name":"National
+        3 - Group E","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/465.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":464,"name":"National
+        3 - Group D","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/464.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":467,"name":"National
+        3 - Group H","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/467.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":468,"name":"National
+        3 - Group I","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/468.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":466,"name":"National
+        3 - Group F","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/466.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":463,"name":"National
+        3 - Group C","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/463.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":462,"name":"National
+        3 - Group B","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/462.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":461,"name":"National
+        3 - Group A","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/461.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":1029,"name":"National
+        3 - Group G","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/1029.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-24","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":69,"name":"National
+        2 - Group C","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/69.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-17","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":true}}]},{"league":{"id":68,"name":"National
+        2 - Group B","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/68.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-17","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":true}}]},{"league":{"id":67,"name":"National
+        2 - Group A","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/67.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-17","end":"2025-05-17","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":true}}]},{"league":{"id":63,"name":"National
+        1","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/63.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-16","end":"2025-05-16","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":true}}]},{"league":{"id":64,"name":"Feminine
+        Division 1","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/64.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-09-21","end":"2025-05-07","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":true,"statistics_players":true},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":61,"name":"Ligue
+        1","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/61.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-18","end":"2025-05-18","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":true,"statistics_players":true},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":true,"predictions":true,"odds":true}}]},{"league":{"id":62,"name":"Ligue
+        2","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/62.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-16","end":"2025-05-10","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":true,"statistics_players":true},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":true}}]}]}'
+  recorded_at: Mon, 16 Dec 2024 16:26:02 GMT
+recorded_with: VCR 6.3.1

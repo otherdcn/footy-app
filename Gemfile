@@ -47,6 +47,10 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  gem "rspec-rails", "~> 7.1"
+  gem "rails-controller-testing", "~> 1.0"
+  gem "webmock", "~> 3.24"
+  gem "vcr", "~> 6.3"
 end
 
 group :development do
@@ -67,3 +71,4 @@ group :test do
 end
 
 gem "httparty", "~> 0.22.0"
+
