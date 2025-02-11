@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://v3.football.api-sports.io/countries?code=na
+    uri: https://v3.football.api-sports.io/leagues?code=FRA&current=true&type=league
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 11 Feb 2025 16:33:11 GMT
+      - Tue, 11 Feb 2025 16:33:14 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -41,13 +41,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '10'
       X-Ratelimit-Remaining:
-      - '7'
+      - '3'
       X-Ratelimit-Requests-Limit:
       - '100'
       X-Ratelimit-Requests-Remaining:
-      - '60'
+      - '56'
       X-Envoy-Upstream-Service-Time:
-      - '183'
+      - '194'
       X-Koyeb-Backend:
       - par
       X-Koyeb-Glb:
@@ -57,11 +57,11 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 9105bd394f6b4fbd-JNB
+      - 9105bd4efda17401-JNB
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"get":"countries","parameters":{"code":"na"},"errors":[],"results":1,"paging":{"current":1,"total":1},"response":[{"name":"Namibia","code":"NA","flag":"https:\/\/media.api-sports.io\/flags\/na.svg"}]}'
-  recorded_at: Tue, 11 Feb 2025 16:33:10 GMT
+      string: '{"get":"leagues","parameters":{"type":"league","current":"true","code":"FRA"},"errors":[],"results":0,"paging":{"current":1,"total":1},"response":[]}'
+  recorded_at: Tue, 11 Feb 2025 16:33:14 GMT
 recorded_with: VCR 6.3.1

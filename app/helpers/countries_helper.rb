@@ -3,7 +3,6 @@ module CountriesHelper
     ENDPOINT = "/countries".freeze
 
     def countries(options = {})
-      #debugger
       queries = { query: options }
 
       self.class.get(ENDPOINT, queries)

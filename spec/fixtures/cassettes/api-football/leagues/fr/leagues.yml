@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 16 Dec 2024 16:26:02 GMT
+      - Tue, 11 Feb 2025 16:33:13 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -41,13 +41,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '10'
       X-Ratelimit-Remaining:
-      - '8'
+      - '4'
       X-Ratelimit-Requests-Limit:
       - '100'
       X-Ratelimit-Requests-Remaining:
-      - '89'
+      - '57'
       X-Envoy-Upstream-Service-Time:
-      - '180'
+      - '178'
       X-Koyeb-Backend:
       - par
       X-Koyeb-Glb:
@@ -57,7 +57,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 8f300862af4f9e8c-JNB
+      - 9105bd49796573b8-JNB
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
@@ -84,5 +84,5 @@ http_interactions:
         Division 1","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/64.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-09-21","end":"2025-05-07","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":true,"statistics_players":true},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":61,"name":"Ligue
         1","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/61.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-18","end":"2025-05-18","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":true,"statistics_players":true},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":true,"predictions":true,"odds":true}}]},{"league":{"id":62,"name":"Ligue
         2","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/62.png"},"country":{"name":"France","code":"FR","flag":"https:\/\/media.api-sports.io\/flags\/fr.svg"},"seasons":[{"year":2024,"start":"2024-08-16","end":"2025-05-10","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":true,"statistics_players":true},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":true}}]}]}'
-  recorded_at: Mon, 16 Dec 2024 16:26:02 GMT
+  recorded_at: Tue, 11 Feb 2025 16:33:13 GMT
 recorded_with: VCR 6.3.1

@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 11 Feb 2025 16:33:12 GMT
+      - Tue, 11 Feb 2025 18:36:17 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -41,13 +41,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '10'
       X-Ratelimit-Remaining:
-      - '5'
+      - '9'
       X-Ratelimit-Requests-Limit:
       - '100'
       X-Ratelimit-Requests-Remaining:
-      - '58'
+      - '54'
       X-Envoy-Upstream-Service-Time:
-      - '174'
+      - '214'
       X-Koyeb-Backend:
       - par
       X-Koyeb-Glb:
@@ -57,7 +57,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 9105bd449ba7053e-JNB
+      - 9106718c592f73e4-JNB
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
@@ -769,5 +769,5 @@ http_interactions:
         B","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/266.png"},"country":{"name":"Chile","code":"CL","flag":"https:\/\/media.api-sports.io\/flags\/cl.svg"},"seasons":[{"year":2025,"start":"2025-02-23","end":"2025-11-02","current":true,"coverage":{"fixtures":{"events":false,"lineups":false,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":329,"name":"Meistriliiga","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/329.png"},"country":{"name":"Estonia","code":"EE","flag":"https:\/\/media.api-sports.io\/flags\/ee.svg"},"seasons":[{"year":2025,"start":"2025-02-28","end":"2025-11-08","current":true,"coverage":{"fixtures":{"events":false,"lineups":false,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":false,"top_scorers":false,"top_assists":false,"top_cards":false,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":369,"name":"Super
         League","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/369.png"},"country":{"name":"Uzbekistan","code":"UZ","flag":"https:\/\/media.api-sports.io\/flags\/uz.svg"},"seasons":[{"year":2025,"start":"2025-03-07","end":"2025-06-28","current":true,"coverage":{"fixtures":{"events":false,"lineups":false,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":true,"top_scorers":true,"top_assists":true,"top_cards":true,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":565,"name":"Liga
         Primera U20","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/565.png"},"country":{"name":"Nicaragua","code":"NI","flag":"https:\/\/media.api-sports.io\/flags\/ni.svg"},"seasons":[{"year":2025,"start":"2024-08-02","end":"2025-02-12","current":true,"coverage":{"fixtures":{"events":true,"lineups":false,"statistics_fixtures":false,"statistics_players":false},"standings":false,"players":false,"top_scorers":false,"top_assists":false,"top_cards":false,"injuries":false,"predictions":true,"odds":false}}]},{"league":{"id":399,"name":"NPFL","type":"League","logo":"https:\/\/media.api-sports.io\/football\/leagues\/399.png"},"country":{"name":"Nigeria","code":"NG","flag":"https:\/\/media.api-sports.io\/flags\/ng.svg"},"seasons":[{"year":2025,"start":"2024-08-31","end":"2025-02-16","current":true,"coverage":{"fixtures":{"events":true,"lineups":true,"statistics_fixtures":false,"statistics_players":false},"standings":true,"players":false,"top_scorers":false,"top_assists":false,"top_cards":false,"injuries":false,"predictions":true,"odds":true}}]}]}'
-  recorded_at: Tue, 11 Feb 2025 16:33:12 GMT
+  recorded_at: Tue, 11 Feb 2025 18:36:17 GMT
 recorded_with: VCR 6.3.1
