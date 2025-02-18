@@ -51,6 +51,7 @@ group :development, :test do
   gem "rails-controller-testing", "~> 1.0"
   gem "webmock", "~> 3.24"
   gem "vcr", "~> 6.3"
+  gem "factory_bot_rails", "~> 6.4"
 end
 
 group :development do
@@ -72,3 +73,5 @@ end
 
 gem "httparty", "~> 0.22.0"
 
+
+gem "devise", "~> 4.9"
